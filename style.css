@@ -1,0 +1,232 @@
+ /* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:60;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -24px;
+}
+#navbar:before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* NAVIGATION BAR: Logo and Image */
+#logo{
+    margin: 12px -23px;    
+
+}
+#logo img{
+    margin: -22px 49px;
+    height: 116px;
+}
+
+
+/* NAVIGATION BAR: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 10px 47px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: all .6s  ease-in-out;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    transform: 15px 52px;
+    
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 200px;
+    height: 464px;
+    align-items: center;
+    justify-content: center;
+    font-family:  cursive;
+}
+#home::before{
+    content: "";
+    background: url(Background/hamburger-2667443.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+/* Service Section */
+#services{
+    display: flex;
+    margin: 70px;
+
+
+}
+#services .box{
+    border: 3px solid brown;
+    padding: 28px;
+    margin: 6px;
+    border-radius: 30px;
+    background-color: rgb(227, 212, 212);
+}
+#services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: cursive;
+}
+
+
+/* Clients Section */
+#client-section{
+    height: 406px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(Background/background3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: .4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 120px;
+}
+.client-item{
+    padding: 34px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(Background/contact-us-2993000.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: .4;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contact-box input,
+#contact-box textarea{
+    padding: .5rem;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+/* Utility classes */
+.h-primary{
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    padding: 14px;
+    font-size: 3.5rem;
+}
+.h-secoundary{
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    padding: 14px;
+    font-size: 1.7rem;
+}
+#btn{
+    padding: 8px 23px;
+    margin: 12px;
+    color: white;
+    background-color: rgb(164, 58, 58);
+    border: 2px solid white;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+#btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(185, 35, 35);
+}
+.center{
+    text-align: center;
+}
+#btnn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    width: 200px;
+    border-radius: 13px;
+    border: 1px solid white;
+    transition: all .5s ease-in-out;
+    display: flex;
+    position: relative;
+    left: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#btnn:hover{
+    background-color: rgb(86, 86, 86);
+    transform: scale(1.1);
+}
