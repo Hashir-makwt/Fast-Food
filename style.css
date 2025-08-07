@@ -16,6 +16,87 @@
     --transition: all 0.3s ease;
 }
 
+/* Minimal CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* System Font Stack for faster rendering */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+              Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Critical Above-the-Fold Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1d3557;
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img {
+  height: 60px;
+  width: auto;
+}
+
+#home {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 60px;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.high-res {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.high-res.loaded {
+  opacity: 0.7;
+}
+
+/* Lazy loading styles */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Defer non-critical CSS */
+@media (min-width: 768px) {
+  /* Desktop-specific styles */
+}
+
+/* ... (rest of your existing CSS with optimizations) ... */
+
 html {
     scroll-behavior: smooth;
 }
@@ -415,3 +496,4 @@ body {
         padding: 0.7rem 1.5rem;
     }
 }
+
