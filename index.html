@@ -4,20 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AuroraBites.com</title>
-    <link rel="stylesheet" href="style.css" />\
-    <link rel="stylesheet" media="screen and (max-width:1094px)" href="phone.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -25,137 +19,153 @@
         <div id="logo">
           <img src="Main/mainlogo.png" alt="AuroraBites.com" />
         </div>
-        <ul>
-          <li class="item"><a href="#">Home</a></li>
-          <li class="item"><a href="#">Services</a></li>
-          <li class="item"><a href="#">About Us</a></li>
-          <li class="item"><a href="#">Contact Us</a></li>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="nav-ul">
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#services">Services</a></li>
+          <li class="item"><a href="#client-section">Clients</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <body>
-      <section id="home">
-        <h1 class="h-primary">Welcome To Online Meal</h1>
+    <section id="home">
+      <div class="home-content">
+        <h1 class="h-primary">Welcome To AuroraBites</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-          nostrum, sequi molestiae deserunt numquam eos voluptate iste in
-          accusantium odit.
+          Experience culinary excellence with our diverse menu crafted by top chefs using the freshest ingredients.
         </p>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-          nostrum, sequi molestiae deserunt .
+          Delicious meals delivered to your doorstep in minutes!
         </p>
         <button id="btn">Order Now</button>
-      </section>
-      
-      <section class="services-container">
-        <h1 class="h-primary center">Our Services</h1>
-        <div id="services">
-          <div class="box">
-            <img src="Logo/logo1.png" alt="Meals" />
-            <h2 class="h-secoundary center">Food Catering</h2>
-            <p class="center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              dignissimos quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempore dicta tempora, in saepe fuga sequi, cum deleniti debitis distinctio repellendus soluta labore obcaecati! modi consequatur praesentium mollitia dolore
-              molestias odit ! Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Quo, earum.
-            </p>
-          </div>
-          <div class="box">
-            <img src="Logo/logo2.png" alt="large Meals" />
-            <h2 class="h-secoundary center">Bulk Odering</h2>
-            <p class="center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              dignissimos quidem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos accusantium iusto sed sequi nostrum accusamus tempora dicta, id doloremque earum cum iure necessitatibus repudiandae. modi consequatur praesentium mollitia dolore
-              molestias odit ! Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Quo, earum.
-            </p>
-          </div>
-          <div class="box">
-            <img src="Logo/ice1.png" alt="Deliveries" />
-            <h2 class="h-secoundary center">Christmas Deals</h2>
-            <p class="center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              dignissimos quidem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi numquam fugiat sunt eaque est dolorem, cum officia inventore voluptatum quibusdam consectetur et! Qui, numquam? modi consequatur praesentium mollitia dolore
-              molestias odit ! Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Quo, earum.
-            </p>
-          </div>
-          <div class="box">
-            <img src="Logo/logo3.png" alt="Deliveries" />
-            <h2 class="h-secoundary center">Food Odering</h2>
-            <p class="center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              dignissimos quidem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellendus, maxime neque sit enim exercitationem optio. Aliquid minima similique optio ipsum et consequatur quisquam. modi consequatur praesentium mollitia dolore
-              molestias odit ! Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Quo, earum.
-            </p>
-          </div>
-        </div>
-      </section>
-    
-      <section id="client-section">
-        <h1 class="h-primary center">Our Clients</h1>
-        <div id="clients">
-          <div class="client-item">
-            <img src="extraLogo/apple4-removebg-preview.png" alt="apple logo" />
-          </div>
-          <div class="client-item">
-            <img src="extraLogo/hp.png" alt="apple logo" />
-          </div>
-          <div class="client-item">
-            <img src="extraLogo/microsoft.png" alt="apple logo" />
-          </div>
-          <div class="client-item">
-            <img src="extraLogo/skype.png" alt="apple logo" />
-          </div>
-        </div>
-      </section>
-    </body>
-
-    <footer>
-      <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
-          <form action="">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your name"/>
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="text"
-                name="Email"
-                id="Email"
-                placeholder="Enter your email"/>
-            </div>
-            <div class="form-group">
-              <label for="cell no">Phone Number:</label>
-              <input
-                type="text"
-                name="phone number"
-                id="phone number"
-                placeholder="Enter your phone number"/>
-            </div>
-            <div class="form-group">
-              <label for="FeedBack">FeedBack:</label>
-              <textarea name="FeedBack" id="FeedBack" cols="16" rows="8"></textarea>
-                
-            </div>
-            <button id="btnn">Submit</button>
-          </form>
-        </div>
-      </section>
-      <div id="footer">
-        Copyright &copy; www.aurorabites.com. All rights reserved| 
       </div>
-      
+    </section>
+    
+    <section class="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="Logo/logo1.png" alt="Meals" />
+          <h2 class="h-secondary center">Food Catering</h2>
+          <p class="center">
+            Professional catering services for all occasions - weddings, corporate events, and private parties. Custom menus tailored to your needs.
+          </p>
+        </div>
+        <div class="box">
+          <img src="Logo/logo2.png" alt="large Meals" />
+          <h2 class="h-secondary center">Bulk Ordering</h2>
+          <p class="center">
+            Special discounts for large orders. Perfect for offices, family gatherings, and special events. Hassle-free delivery included.
+          </p>
+        </div>
+        <div class="box">
+          <img src="Logo/ice1.png" alt="Deliveries" />
+          <h2 class="h-secondary center">Seasonal Deals</h2>
+          <p class="center">
+            Limited-time seasonal specials featuring festive flavors. Check back often for our rotating menu of holiday-inspired dishes.
+          </p>
+        </div>
+        <div class="box">
+          <img src="Logo/logo3.png" alt="Deliveries" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">
+            Fast and reliable food delivery. Order online or through our app and enjoy restaurant-quality meals in the comfort of your home.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <section id="client-section">
+      <h1 class="h-primary center">Our Partners</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img src="extraLogo/apple4-removebg-preview.png" alt="apple logo" />
+        </div>
+        <div class="client-item">
+          <img src="extraLogo/hp.png" alt="hp logo" />
+        </div>
+        <div class="client-item">
+          <img src="extraLogo/microsoft.png" alt="microsoft logo" />
+        </div>
+        <div class="client-item">
+          <img src="extraLogo/skype.png" alt="skype logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea 
+              name="feedback" 
+              id="feedback" 
+              cols="30" 
+              rows="5"
+              placeholder="Your message here..."
+              required
+            ></textarea>
+          </div>
+          <button id="btnn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Copyright &copy; 2023 AuroraBites.com. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const navUl = document.getElementById('nav-ul');
+
+      hamburger.addEventListener('click', () => {
+        navUl.classList.toggle('show');
+      });
+    </script>
   </body>
 </html>
